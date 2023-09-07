@@ -1,0 +1,3 @@
+function(instance, context) {
+function getUniqueStr(a){for(var t="",i="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",r=i.length,d=0;d<a;d++)t+=i.charAt(Math.floor(Math.random()*r));return t}var uuid=getUniqueStr(8),uuid_parent=uuid+"_parent",boxchart=$('<div id="'+uuid_parent+'" style="position: relative !important;" ><canvas id="'+uuid+'"></canvas></div>');boxchart.css("width","100%"),boxchart.css("height","100%"),instance.canvas.append(boxchart),instance.data.id=uuid,instance.data.id_p=uuid_parent;
+}
