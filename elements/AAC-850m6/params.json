@@ -35,13 +35,22 @@
             "value": "text"
         },
         "AAI": {
-            "caption": "barvalue",
+            "caption": "Bar value",
             "default_val": "1,2,3,4,5",
             "doc": "seperate by comma in order matchin with value and tags. Example: 1, 2,3,4,5",
             "editor": "DynamicValue",
             "name": "barvalue",
             "rank": 3,
             "value": "text"
+        },
+        "AAJ": {
+            "caption": "Chart vertical",
+            "default_val": true,
+            "doc": "Switch between vertical and horizontal bars.",
+            "editor": "DynamicValue",
+            "name": "chart_vertical",
+            "rank": 4,
+            "value": "boolean"
         }
     },
     "icon": "ion-podium",
