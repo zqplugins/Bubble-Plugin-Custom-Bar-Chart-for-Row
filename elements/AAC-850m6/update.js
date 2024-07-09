@@ -3,9 +3,9 @@ function(instance, properties, context) {
   const pieId = instance.data.id,
     ctx = document.getElementById(pieId);
 
-  var barColors = properties.barcolor.split(","),
-    xValues = properties.bartags.split(","),
-    yValues = properties.barvalue.split(",");
+  var barColors = properties.barcolor?.split(","),
+    xValues = properties.bartags?.split(","),
+    yValues = properties.barvalue?.split(",");
 
   const chart = new Chart(ctx, { 
     type: properties.chart_vertical ? "bar" : "horizontalBar", 
